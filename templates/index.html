@@ -1,0 +1,28 @@
+{% extends "bootstrap/base.html" %}
+
+{%block content%}
+<h1>hello world!!</h1>
+
+<div class="alert alert-danger" role="alert">
+    Demonstration of adding bootstrap element! added alert successfully
+  </div>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis deserunt perspiciatis cum odio porro beatae sapiente? Adipisci illo sapiente quaerat.</p>
+{%endblock %}
+
+{%block scripts %}
+{{super() }} 
+<!-- {{super() }} this statement includethe cdn along with the come from inbuild-base template if we not used the super fun this will override the scripts/ included files like js,jquery,css.   -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+{%endblock %}
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap - flask</title>
+</head>
+<body>
+    
+</body>
+</html> -->
